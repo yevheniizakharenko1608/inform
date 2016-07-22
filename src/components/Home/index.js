@@ -4,7 +4,7 @@ export default class Home extends Component {
     render() {
         return (
             <div className='row'>
-                <div className='col-md-12'>Раздел /</div>
+                <div className='col-md-12'>Добро пожаловать на курс по redux + react-routerz</div>
             </div>
         )
     }
