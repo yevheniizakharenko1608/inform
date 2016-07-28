@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 export default class Genre extends Component {
     render() {
         let template;
-        {/* если параметр release есть - покажи дочерний компонент */}
         if (this.props.params.release) {
             template = (
                 <div className='row'>
