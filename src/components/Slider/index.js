@@ -23,7 +23,7 @@ Slider.propTypes = {
     min: React.PropTypes.number,
     max: React.PropTypes.number,
     step: React.PropTypes.number,
-    val: React.PropTypes.number,
+    val: React.PropTypes.string,
     label: React.PropTypes.string,
     update: React.PropTypes.func.isRequired,
     type: React.PropTypes.string
