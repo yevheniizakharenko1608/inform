@@ -8,6 +8,7 @@ import Genre from './components/Genre'
 import Release from './components/Release'
 import Home from './components/Home'
 import LoginPage from './containers/LoginPage'
+import Friend from './containers/Friends'
 import NotFound from './components/NotFound'
 import requireAuthentication from './containers/AuthenticatedComponent'
 
@@ -19,6 +20,7 @@ export const routes = (
             <Route path='/genre/:genre' component={Genre}>
                 <Route path='/genre/:genre/:release' component={Release} />
             </Route>
+            <Route path='/friends' component={Friend} />
             <Route path='/list' component={List} />
             <Route path='/login' component={LoginPage} />
         </Route>
