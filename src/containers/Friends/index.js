@@ -18,6 +18,7 @@ export default class Friends extends React.Component {
             isBestFriend: false
         };
         this.updateForSearch = this.updateForSearch.bind(this);
+        this.addFriend = this.addFriend.bind(this);
     }
 
     updateForSearch(e) {
