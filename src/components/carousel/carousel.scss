@@ -1,23 +1,23 @@
 .carousel {
-  width: 740px;
-  height: 370px;
-  display: inline-block;
-  .carousel__slide {
-    height: 370px;
-    width: 740px;
-  }
-  .carousel__slide_n_0 {
-    background: url("../img/slide-0.png") no-repeat;
-  }
+  width: 324px;
+  height: 540px;
+  overflow: hidden;
+}
   .carousel__slide_n_1 {
-    background: url("../img/slide-1.png") no-repeat;
+    background: url("img/1.jpg") no-repeat;
+    height: 540px;
+    width: 324px;
+    display: inline-block;
   }
-  .carousel__slide_n_2 {
-    background: url("../img/slide-2.png") no-repeat;
-  }
+.carousel__slide_n_2 {
+  background: url("img/2.jpg") no-repeat;
+  height: 540px;
+  width: 324px;
+  display: inline-block;
+}
   .carousel__dots {
     position: absolute;
-    left: 45px;
+    left: 10px;
     bottom: 30px;
   }
   .carousel__dots > li {
@@ -28,7 +28,6 @@
     background: #ffc79a;
     width: 10px;
     height: 10px;
-    border: none;
     color: transparent;
     border-radius: 5px;
     border: 1px solid rgba(85, 33, 15, .3);
@@ -36,7 +35,7 @@
   .carousel__dots > li.slick-active > button {
     background: #ff8726;
   }
-}
+
 
 .slick-prev, .slick-next {
   display: none;

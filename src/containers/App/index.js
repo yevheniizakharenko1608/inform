@@ -7,10 +7,10 @@ export default class App extends Component {
             <div className='container'>
                 <ul className='nav nav-pills'>
                     <li><NavLink onlyActiveOnIndex={true} to='/'>Главная</NavLink></li>
-                    <li><NavLink to='/admin'>Админка</NavLink></li>
-                    <li><NavLink to='/list'>Список жанров</NavLink></li>
-                    <li><NavLink to='/login'>Войти</NavLink></li>
-                    <li><NavLink to='/friends'>Мои друзья</NavLink></li>
+                    <li><NavLink to='/test1'>Test №1</NavLink></li>
+                    <li><NavLink to='/test2'>Test №2</NavLink></li>
+                    <li><NavLink to='/test3'>Test №3</NavLink></li>
+                    <li><NavLink to='/test4'>Test №4</NavLink></li>
                 </ul>
                 {this.props.children}
             </div>

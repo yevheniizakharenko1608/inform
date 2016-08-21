@@ -1,41 +1,13 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
-import Slider from '../Slider'
-import Persons from '../Persons'
+import Carousel from '../carousel'
 
 export default class Home extends Component {
-    constructor(){
-        super();
-        this.state = {
-            meaning: '0'
-        };
-        this.update = this.update.bind(this)
-    }
-
-    update(){
-        this.setState({
-            meaning: ReactDOM.findDOMNode(this.refs.meaning.refs.inp).value
-        })
-    }
-
+    
     render() {
         return (
-            <div>  
-            <div className='row'>
-                <div className='col-lg-1 col-md-1 col-sm-1 col-xs-1'></div>
-                <Slider className='col-lg-10 col-md-10 col-sm-10 col-xs-10'
-                        ref='meaning'
-                min={0}
-                max={100} 
-                step={1}
-                val={this.state.meaning}
-                label='How old are you?'
-                update={this.update}/>
-                <div className='col-lg-1 col-md-1 col-sm-1 col-xs-1'></div>
-            </div>
-                <div>
-                    <Persons/>
-                </div>
+            <div>
+                <p>Здравствуйте. Меня зовут Евгений Захаренко, мне 20. Я очень хочу развиваться в ИТ сфере и получать практический опыт. Выше - выполненные тесты. Может я что-то сделал не так... Но я прошу только дать мне шанс и я покажу все что могу, выложусь по полной. Я готов изучать новые технологии, не спать ночами, изучая новый материал... Приходить пораньше и задерживаться на работе. У меня есть огромная мотивация. Спасибо.</p>
+                <Carousel />
             </div>
         )
     }
